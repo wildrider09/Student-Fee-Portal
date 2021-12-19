@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to IIIT Bangalore</title>
+    <link rel="icon" href="assets/images/iiitb-invert-logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bills.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<div>
+    <nav>
+        <img src="assets/images/iiitb-invert-logo.png" onclick="goToHome()" alt="">
+        <label class="logo"> IIIT - Bangalore</label>
+        <ul>
+            <li><a onclick="goToHome()">Home</a></li>
+            <li><a onclick="gotoshowPayment()">Show Payments</a></li>
+<!--            <li><a onclick="functionNotify()" id="deadlineAlert">Alerts</a>-->
+<!--                <ul class="notify" id="notification-drop">-->
+<!--                </ul>-->
+<!--            </li>-->
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+</div>
+<body>
+<main class="container">
+    <h1 id="welcomeMessage"></h1>
+    <h2 id="rollNumber"></h2>
+    <h2 id="heading"></h2>
+</main>
+<table class="container" id="show-bills">
+    <thead>
+    <tr>
+        <th><h1>Description</h1></th>
+        <th><h1>BillDate</h1></th>
+        <th><h1>Deadline</h1></th>
+        <th><h1>Total Amount</h1></th>
+        <th><h1>Paid Amount</h1></th>
+        <th><h1>Remaining Amount</h1></th>
+        <th><h1>College</h1></th>
+        <th><h1>Pay Now</h1></th>
+    </tr>
+    </thead>
+    <tbody id="bills">
+    </tbody>
+</table>
+
+<div class="payment" id="payment" style="width:800px; margin:0 auto;">
+    <div class="totalAmount">
+        <label for="totalAmount">Total Amount</label>
+        <input type="number" id="totalAmount" name="totalAmount" readonly> <br>
+    </div>
+    <div>
+        <button class="btn paymentButton" type="submit" onclick="payment()">Proceed to Payment</button>
+    </div>
+</div>
+</body>
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>Student <span>Payment Fee</span></h3>
+        <p class="footer-links">
+            <a onclick="goToAbout()">About</a>
+            ·
+            <a onclick="goToContactUs()">Contact</a>
+        </p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p>IIIT Bangalore<span>Electronic City Bangalore, KA, India</span></p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <span><p>080 4140 7777</p></span>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Student Fee Payment is your single place to keep track of all your current and already paid college bills.
+        </p>
+    </div>
+</footer>
+<script src="assets/js/show-bills.js"></script>
+</html>

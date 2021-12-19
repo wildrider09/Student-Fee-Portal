@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact us</title>
+    <link rel="icon" href="assets/images/iiitb-invert-logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+</head>
+<div>
+    <nav>
+        <img src="assets/images/iiitb-invert-logo.png" onclick="goToHome()" alt="">
+        <label class="logo"> IIIT - Bangalore</label>
+        <ul>
+            <li><a onclick="goToHome()">Home</a></li>
+            <li><a onclick="gotoshowPayment()">Show Payments</a></li>
+            <li><a onclick="functionNotify()" id="deadlineAlert">Alerts</a>
+                <ul class="notify" id="notification-drop"></ul>
+            </li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+        <span id="icon">
+                   </span>
+    </nav>
+</div>
+<body>
+<main class="container">
+    <h2 style="font-size: 40px"><u>Contact Us</u></h2>
+    <div style="margin-top: 3em">
+        <div>
+            <h3>Abhishek Garg</h3>
+            <div class="row">
+                <div class="column">
+                    <a href="https://github.com/wildrider09">
+                        <img src="assets/images/github-logo.png" alt="Snow" style="width:34px;height: 30px">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/heatx09/">
+                        <img src="assets/images/linked-in-logo.png" alt="Forest" style="width:34px;height: 30px">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="mailto:ram101997@gmail.com">
+                        <img src="assets/images/email-logo.png" alt="Mountains" style="width:34px;height: 30px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#808080;width:50%">
+
+    </div>
+</main>
+</body>
+<script src="assets/js/bill-payment.js"></script>
+</html>

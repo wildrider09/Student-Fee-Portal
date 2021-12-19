@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.42em;
+    color: #A7A1AE;
+    background-color: #1F2739;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+    color: #4DC3FA;
+    margin-top: 1em;
+    font-family: "Great Vibes", cursive;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1em;
+    color: #4DC3FA;
+    margin-top: 12px;
+    margin-left: 1em;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+}
+
+p {
+    font-style: oblique;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.left {
+    float: left;
+    width: 45%;
+    margin-left: 5px;
+}
+
+.right {
+    float: right;
+    width: 45%;
+    margin-right: 5px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 8%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    margin-left: 45%;
+}

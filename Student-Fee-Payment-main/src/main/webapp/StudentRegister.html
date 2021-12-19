@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to IIIT Bangalore</title>
+    <link rel="icon" href="assets/images/iiitb-invert-logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+<div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            <img src="assets/images/iiitb_logo.jpg" alt=""/>
+            <h3>Welcome</h3>
+            <p>Internation Institute of Information Technology Bangalore</p>
+            <!--<input type="submit" name="" value="Login"/><br/>-->
+        </div>
+        <div class="col-md-9 register-right">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Enter the following details</h3>
+                    <form class="register-student" id="register-student">
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="firstName" class="sr-only">User Name</label>
+                                    <input id="firstName" type="text" class="form-control" placeholder="First Name"
+                                           required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="sr-only">User Name</label>
+                                    <input id="lastName" type="text" class="form-control" placeholder="Last Name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="sr-only">User Name</label>
+                                    <input id="password" type="password" class="form-control" placeholder="Password"
+                                           required/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="sr-only">User Name</label>
+                                    <input id="email" type="email" class="form-control" placeholder="Your Email"
+                                           required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="graduationYear" class="sr-only">User Name</label>
+                                    <input id="graduationYear" type="number" class="form-control"
+                                           placeholder="Graduation Year" min="2021"
+                                           max="2100"/>
+                                </div>
+                                <input type="submit" class="btnRegister" value="Register"/>
+                            </div>
+                            <div class="form-group">
+                                <p class="register-card-dupe-email" id="dupeEmail"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>Student <span>Payment Fee</span></h3>
+        <p class="footer-links">
+            <a href="about.html">About</a>
+            ·
+            <a href="contactus.html">Contact</a>
+        </p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p>IIIT Bangalore<span>Electronic City Bangalore, KA, India</span></p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <span><p>080 4140 7777</p></span>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Student Fee Payment is your single place to keep track of all your current and already paid college bills.
+        </p>
+    </div>
+</footer>
+<script src="assets/js/register-student.js"></script>
+</html>
